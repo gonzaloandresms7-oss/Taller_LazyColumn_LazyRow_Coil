@@ -27,6 +27,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil3.compose.AsyncImage
 import me.gonzalomejia.taller_lazycolumn_lazyrow_coil.model.Story
 
 
@@ -78,7 +79,7 @@ fun StoryItem(story: Story) {
                 .padding(3.dp),
             contentAlignment = Alignment.Center
         ) {
-            //Aca me daba error en AsynImage, investigue y al parecer es un problema de librerias, sin embargo al intentar meterlo en buil.grade.kts me dio error entonces mejor segui la recomendación que me da android studio
+            //ya se corrigio el error de aca, tocaba hacer dos pasos más en el taller
             AsyncImage(
                 model = story.profileImageUrl,
                 contentDescription = story.username,
@@ -99,15 +100,4 @@ fun StoryItem(story: Story) {
         )
     }
 }
-
-@Composable
-fun AsyncImage(
-    model: String,
-    contentDescription: String,
-    modifier: Modifier,
-    contentScale: ContentScale
-) {
-    TODO("Not yet implemented")
-}
-
 

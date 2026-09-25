@@ -2,7 +2,7 @@ package me.gonzalomejia.taller_lazycolumn_lazyrow_coil.data
 
 import me.gonzalomejia.taller_lazycolumn_lazyrow_coil.model.Post
 import me.gonzalomejia.taller_lazycolumn_lazyrow_coil.model.Story
-// En esta parte debia ir package com.example.instagramclone.data sin embargo no me lo recibe y de ma error
+// En esta parte debia ir package com.example.instagramclone.data sin embargo no me lo recibe y me da error
 // Ademas de hizo importar mi codigo de Post y Story
 
 object DataSource {
