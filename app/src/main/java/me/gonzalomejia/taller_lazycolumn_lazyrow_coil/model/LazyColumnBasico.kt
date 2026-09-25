@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import me.gonzalomejia.taller_lazycolumn_lazyrow_coil.ui.components.PostCard
 
 @Composable
 fun BasicFeedList(posts: List<Post>)
@@ -29,10 +30,7 @@ fun BasicFeedList(posts: List<Post>)
     }
 }
 
-@Composable
-fun PostCard(post: Post) {
-    TODO("Not yet implemented")
-}
+
 
 
 @Composable
