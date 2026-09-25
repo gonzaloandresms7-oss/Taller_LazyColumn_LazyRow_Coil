@@ -12,47 +12,19 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import me.gonzalomejia.taller_lazycolumn_lazyrow_coil.model.Post
+import me.gonzalomejia.taller_lazycolumn_lazyrow_coil.ui.screens.FeedScreen
+import me.gonzalomejia.taller_lazycolumn_lazyrow_coil.ui.screens.InstagramTopBar
 import me.gonzalomejia.taller_lazycolumn_lazyrow_coil.ui.theme.Taller_LazyColumn_LazyRow_CoilTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
-            Taller_LazyColumn_LazyRow_CoilTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+            //Intente poner el InstagramCloneTheme pero no pude, me salia como error
+            //Por ahora voy a dejarlo asi porque me ejecuta el feed de instagram pero voy a mandarle un correo al profesor
+                FeedScreen()
             }
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    val post = Post(
-        id = 1,
-        username = "Gonzalo",
-        profileImageUrl = "https://www.significados.com/url/",
-        imageUrl = "https://www.significados.com/url/",
-        likes = 900,
-        caption = "Hola chicos",
-        isLiked = false
-    )
 
-    val post2 = post.copy(isLiked = true)
-
-    println(post)
-    println(post2)
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Taller_LazyColumn_LazyRow_CoilTheme {
-        Greeting("Android")
-    }
-}

@@ -1,6 +1,5 @@
 package me.gonzalomejia.taller_lazycolumn_lazyrow_coil.model
 
-
 data class Post(
     val id: Int,
     val username: String,
