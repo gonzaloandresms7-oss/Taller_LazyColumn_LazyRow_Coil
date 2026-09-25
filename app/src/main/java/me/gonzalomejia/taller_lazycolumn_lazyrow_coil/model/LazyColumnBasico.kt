@@ -26,6 +26,10 @@ fun BasicFeedList(posts: List<Post>)
     }
 }
 
+@Composable
+fun PostCard(post: Post) {
+    TODO("Not yet implemented")
+}
 
 
 @Composable
