@@ -19,6 +19,9 @@ fun BasicFeedList(posts: List<Post>)
         contentPadding = PaddingValues(vertical = 8.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
+        item {
+            Text("-- Inicio del Feed --")
+        }
         items(
             items=posts,
             key= { post -> post.id}
