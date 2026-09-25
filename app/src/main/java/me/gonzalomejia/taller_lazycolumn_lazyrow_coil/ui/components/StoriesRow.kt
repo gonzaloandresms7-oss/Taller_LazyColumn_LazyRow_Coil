@@ -80,7 +80,7 @@ fun StoryItem(story: Story) {
         ) {
             //Aca me daba error en AsynImage, investigue y al parecer es un problema de librerias, sin embargo al intentar meterlo en buil.grade.kts me dio error entonces mejor segui la recomendación que me da android studio
             AsyncImage(
-                model = story.profileImageURL,
+                model = story.profileImageUrl,
                 contentDescription = story.username,
                 modifier = Modifier
                     .size(56.dp)
